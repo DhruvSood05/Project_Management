@@ -1,0 +1,20 @@
+{
+  "name": "project-management",
+  "version": "1.0.0",
+  "description": "a project management system to learn backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "backend",
+    "API",
+    "creation"
+  ],
+  "author": "Dhruv Sood",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
