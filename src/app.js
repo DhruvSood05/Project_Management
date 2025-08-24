@@ -18,12 +18,15 @@ app.use(
   }),
 );
 
-app.get("/", (req, res) => {
-  res.send("this is home page");
-});
+//import the routes
+import healthCheckRouter from "./routes/healthcheck.routes.js";
+import authRouter from "./routes/auth.routes.js";
 
-app.get("/instagram", (req, res) => {
-  res.send("this is an instagram page");
+app.use("/api/v1/healthcheck", healthCheckRouter);
+app.use("/api/v1/auth", authRouter);
+
+app.get("/", (req, res) => {
+  res.send("Welcome to basecampy");
 });
 
 export default app;
